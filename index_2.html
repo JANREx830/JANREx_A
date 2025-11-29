@@ -1,46 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
+    <script src="src/javascript.js" defer></script>
     <title>Document</title>
 </head>
+
 <body style="margin: 0; padding: 0; ">
     <header>
-        <nav style="top: 0; width: 100%; height: 60px; position: fixed; background-color: aquamarine;">
-            <ul style="display: flex; list-style: none; justify-content: space-around; ">  
+        <nav>
+            <ul style="display: flex; list-style: none; justify-content: space-around; ">
                 <li><a href="#title">Inicio</a></li>
                 <li><a href="#temario">Temario</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="pruebajs.html">Prueba</a></li>
             </ul>
         </nav>
     </header>
     <br>
     <br>
-    <main style="padding: 65px;">
-        <h1 id="title">Curso HTML-CCS-JAVASCRIPT</h1>
+    <main>
+        <h1 id="tittle">Curso HTML-CCS-JAVASCRIPT</h1>
     </main>
-    <article>
-        <p>Curso para Principiantes</p>
-    </article>
-   
-    <ul>
-         <h1 id="temario">Temario</h1>
-         <li>Principiante de desarrollo web</li>
-         <li>Creacion de sitio we</li>
-         <li>Diseño basico</li>
-         <li>Curso basico de javascript</li>    
-    </ul>
+    <div id="home">
+        <div id="home1">
+            <h3 class="div-home itemuno">A quien va diridigido</h3>
+            <article>
+                <p class="div-home">Curso para Principiantes</p>
 
-    <p id="contacto">Esto es un parrafo</p>
+                <a class="div-home itemdos" href="Componentesdedesarrolloweb.pdf" download="Prueba.pdf">
+                    <li>Has cick si quieres descargar este pdf</li>
+                </a>
+                <alt>Esto es una vista</alt>
+            </article>
+        </div>
+        <div id="home2">
+            <ul>
+                <h1 class="div-home" id="temario">Temario</h1>
+                <li class="div-home item1">Principiante de desarrollo web</li>
+                <li class="div-home item2">Creacion de sitio we</li>
+                <li class="div-home item3">Diseño basico</li>
+                <li class="div-home item4">Curso basico de javascript</li>
+            </ul>
+        </div>
+    </div>
     <ul>
-        <li>HTML</li><img src="https://webdevmonk.com/main/html.png" alt="logo html" width="30px" height="auto">
-        <li>CSS</li><img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="logo css" width="30px" height="auto">
-        <li>JAVASCRIPT</li><img src="https://thumbs.dreamstime.com/b/logo-icono-de-javascript-menudo-abreviado-como-js-es-un-lenguaje-programaci%C3%B3n-que-se-ajusta-la-especificaci%C3%B3n-ecmascript-alto-204759326.jpg" alt="logo javascript" width="30px" height="auto">
+        <div id="modelo">
+
+            <li>HTML</li>
+            <a target="_top" href="https://developer.mozilla.org/es/docs/Web/HTML">
+                <figure>
+                    <img src="https://webdevmonk.com/main/html.png" alt="logo html" width="30px" height="auto">
+            </a>
+            <figcaption>Hipertext Markup Language</figcaption>
+            </figure>
+            <li>CSS</li>
+            <a target="_parent" href="https://lenguajecss.com/css/introduccion/que-es-css/">
+                <figure>
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="logo css" width="30px"
+                        height="auto">
+            </a>
+            <figcaption>Cascading Style Sheets </figcaption>
+            </figure>
+            <li>JAVASCRIPT</li>
+            <a target="_blank " href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                <figure>
+                    <img src="https://thumbs.dreamstime.com/b/logo-icono-de-javascript-menudo-abreviado-como-js-es-un-lenguaje-programaci%C3%B3n-que-se-ajusta-la-especificaci%C3%B3n-ecmascript-alto-204759326.jpg"
+                        alt="logo javascript" width="30px" height="auto">
+            </a>
+            <figcaption>JS</figcaption>
+            </figure>
+        </div>
     </ul>
-    <a href="https://github.com/JANREx830/JANREx_A.git">Click aquí</a>
+    <footer>
+        <form action="" id="formulario">
+            <h2>Quiero informacion del curso </h2>
+            <label for="nombre">Nombre del interesado</label>
+            <br>
+            <input type="text" class="inputs" name="Nombre" placeholder="Johan Alv Cam" requiered required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras">
+            <br>
+            <label for="nombre">Correo del interesado</label>
+             <br>
+            <input type="email" class="inputs" name="Correo" placeholder="Ejemplo@outlook.com" required>
+            <br>
+           <label for="text">Tengo interes en...</label>
+            <br>
+           <textarea class="inputs" name="comentarios" id="comentarios" type="text" placeholder="Tengo interes en..."></textarea>
+            <input type="submit" id="inputbottom" required >
+        </form>
+        <a href="https://github.com/JANREx830/JANREx_A.git" target="_blank" rel="noopener noreferrer">Página principal</a>
+    </footer>
 
 </body>
+
 </html>
