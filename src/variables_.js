@@ -4,7 +4,7 @@ const buttoncheck = document.getElementById("buttoncheck");
 const datatype_practice = document.getElementById("datatype_practice");
 const resultadocomparador = document.getElementById("resultadocomparador");
 const comparadorform = document.getElementById("comparadorform");
-
+let intervalo;
 
 buttonform.addEventListener("click", function (even) {
     even.preventDefault();
@@ -119,3 +119,34 @@ comp2=document.getElementById("comp2").value;
   }
    comparadorform.innerHTML = mensaje;
 });
+
+function ejecutarfor(){
+  const input = parseInt(document.getElementById("forin").value);
+  const etiqueta = document.getElementById("resultadodelfor");
+  etiqueta.innerHTML = ``;
+  for (let i = 1; i <= input; i++) {
+    etiqueta.innerHTML += `Este es el ciclo N: ${i} <br>`;
+
+  }
+}
+function iniciarwhile(){
+  let contador=1;
+ const input = parseInt(document.getElementById("whilein").value);
+  const etiqueta = document.getElementById("resultadodelwhile");
+  etiqueta.innerHTML = ``;
+  contador=1;
+  
+    intervalo = setInterval(() => {
+      if(contador<=input){
+         etiqueta.innerHTML += ` |  ${contador}`;
+         contador++;
+      }
+      else{
+        clearInterval(intervalo);
+      }
+    }, 2000);
+ 
+}
+function detenerwhile(){
+  clearInterval(intervalo);
+}

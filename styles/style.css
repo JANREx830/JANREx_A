@@ -170,7 +170,7 @@ figcaption{
     font-family: 'Courier New', Courier, monospace;
 
 }
-footer, #formulariopractica{
+footer{
     background-color: rgb(80, 128, 218); 
     border: solid black;
     
@@ -251,37 +251,4 @@ img{
 }
 img:hover{ 
 animation: none;
-}
-#calculadora{
-    display: flex;
-    background-color: burlywood;
-    width: 100%;
-    form{
-        padding: 30px;
-    }
-    .numerador{
-        margin: 10px;
-        height: 10%;
-        padding: 18px ;
-        display: grid;
-        
-    }
-     .inputs,#result{
-        font-size: 2rem;
-        width: 30%;
-        
-        
-    }
-    #calcdiv{
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 2fr 2fr;
-        gap: 15px;         
-
-    }
-}
-#comparador{
-    background-color: #0ce5de;
-    border: 2px solid black;
-    padding: 20px;
 }

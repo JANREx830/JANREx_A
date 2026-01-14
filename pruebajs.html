@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/variables_css.css">
     <script src="src/variables_.js" defer></script>
     <title>Prueba</title>
 </head>
@@ -14,9 +14,11 @@
         <a href="index_2.html">Inicio principal</a>
     </nav>
     <main>
-        <h1>Clase de prueba</h1>
+        <h1>Ejemplos práctica</h1>
     </main>
     <div id="formulariopractica">
+        <h2>Variables de javascript</h2>
+        <i>Clase 15-Variables en javascript</i>
         <p>Dale click al boton para ver que tipo de variable es</p>
         <ul style="display: flex; list-style: none; justify-content: space-around;">
             <li>let tipo1='Hola'</li>
@@ -28,6 +30,7 @@
         <p id="datatype"></p>
     </div>
     <hr>
+    <div id="comprobardat">
     <h2>Comprobar mis datos</h2>
     Dato 1
     <input type="text" id="dato1">
@@ -43,8 +46,10 @@
     <br>
     <br>
     <br>
+    </div>
     <div id="calculadora">
-
+        <h2>Calculadora</h2>
+         <i>Clase 16-Operadores en javascript</i>
         <form action="" id="calcdiv">
             <input type="number" name="num1" id="num1">
             <input type="number" name="num2" id="num2">
@@ -56,12 +61,31 @@
         <input type="text" id="result" value="0" disabled>
     </div>
     <div id="comparador">
+
+        <h2>Comparador</h2>
+         <i>Clase 17-Comparadores en javascript</i>
+        
         <form action="" id="comparadorform">
             <input type="text" id="comp1" required>
             <input type="text" id="comp2" required>
             <button type="submit">Comparación</button>
         </form>
    <p id="resultadocomparador"></p>
+    </div>
+    <div id="ciclos">
+        <h2>Ciclos en javascript</h2>
+          <i>Clase 18-Ciclos en javascript</i>
+        <br>
+        <h3>Ciclo for</h3>
+        <input type="number" id="forin">
+        <button type="button" onclick="ejecutarfor()">Ejecutar ciclo for</button>
+        <p id="resultadodelfor"></p>
+        <br>
+        <h3>Ciclo while</h3>
+        <input type="number" id="whilein">
+        <button type="button" onclick="iniciarwhile()">Iniciar ciclo while</button>
+        <button type="button" onclick="detenerwhile()">Detener ciclo while</button>
+        <p id="resultadodelwhile"></p>
     </div>
 </body>
 
